@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+    {{form_start(form)}}
+    {{form_widget(form)}}
+    <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+    {{form_end(form)}}
+<div/>
+<div/>
+<div/>
+
+{% endblock %}
